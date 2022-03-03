@@ -1,0 +1,80 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending_creators {
+  padding: 5rem -0px;
+  @include flex;
+}
+
+.container {
+  @include flex;
+  background: rgba(255,255,255, 0.2);
+  backdrop-filter: blur(100px);
+  flex-direction: column;
+  width: min(90%, 80rem);
+  border-radius: 15px;
+  padding: 2rem 0;
+
+}
+
+.creators_container {
+  width: 100%;
+  @include flex;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.creator_card {
+  @include flex;
+  background: rgb(12,1,50, 0.7);
+  backdrop-filter: blur(50px);
+  height: 150px;
+  width: 300px;
+  border-radius: 15px;
+  color: white;
+  box-shadow: 5px 5px 15px 2px rgb(0,0,0,0.2);
+  margin-top: 2rem;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 5px 5px 15px 2px rgb(0,0,0,0.5);
+  }
+}
+
+.creator_image_container {
+  @include flex;
+  position: relative;
+}
+
+.creator_image {
+  object-fit: cover;
+  border-radius: 100%;
+  height: 100px;
+  width: 100px;
+}
+
+.level {
+  @include flex;
+  height: 30px;
+  width: 30px;
+  background: #31a0f2;
+  position: absolute;
+  top: -6px;
+  right: -2px;
+  border-radius: 100%;
+}
+
+.creator_details {
+  margin-left: 3rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.balance {
+  color: #31a0f2 ;
+}

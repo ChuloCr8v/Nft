@@ -1,0 +1,42 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav,
+.show_menu {
+  @include flex;
+  background: #000;
+  height: 0;
+  width: 100vw;
+  position: fixed;
+  bottom: -6rem;
+  left: 0;
+  z-index: 20;
+  transition: all 0.4s;
+  .menu {
+    width: 100%;
+    @include flex;
+    * + * {
+      margin-left: .8rem;
+    }
+  }
+}
+
+.show_menu {
+  bottom: 0;
+  height: 5rem;
+}
+
+.menu_item {
+  list-style: none;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    color: gold;
+  }
+}
