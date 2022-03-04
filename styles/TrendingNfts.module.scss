@@ -1,0 +1,137 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending_nfts,
+.container,
+.nft_container {
+  @include flex;
+  flex-direction: column;
+}
+
+.trending_nfts {
+  padding: 5rem 0;
+}
+
+.container {
+  width: min(90%, 80rem);
+}
+
+.nft_container {
+  margin-top: 5rem;
+}
+
+.nft_card {
+  background: rgb(15,44,106, 0.3);
+  backdrop-filter: blur(100px);
+  position: relative;
+  flex-direction: column;
+  min-height: 400px;
+  width: 350px;
+  padding: 10px;
+  margin-top: 2rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 30px 10px rgb(0,0,0,0.2);
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.5);
+  }
+}
+
+.nft_img_container {
+  position: relative;
+  @include flex;
+  flex-direction: column;
+}
+
+.likes_container {
+  width: 80px;
+  height: 30px;
+  @include flex;
+  justify-content: space-around;
+  background: white;
+  border-radius: 100px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  padding: 0 8px;
+  box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.5);
+  color: black;
+}
+
+.icon {
+  height: 1rem;
+  width: 1rem;
+  color: red;
+}
+
+.nft_img {
+  max-width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.price_place_bid_container {
+  @include flex;
+  Justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.name {
+  color: white;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  text-transform: capitalize;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: goldenrod
+}
+
+.place_bid_btn {
+  color: white;
+  background: #006bdc;
+  border-radius: 100px;
+  padding: 10px 18px;
+  border: none;
+  box-shadow: 3px 3px 10px 2px rgb(0,0,0,0.2);
+  &:hover {
+    box-shadow: 5px 5px 15px 2px rgb(0,0,0,0.5);
+  }
+}
+
+.creator_details {
+  @include flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+.creator_img_container {
+  @include flex;
+}
+
+.creator_img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.creator_name {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1.2em;
+}
+
+.availability {
+  color: teal;
+}
