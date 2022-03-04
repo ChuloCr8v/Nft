@@ -1,0 +1,41 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blogs {
+  @include flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.container {
+  @include flex;
+  flex-direction: column;
+  width: min(90%, 80rem);
+}
+
+.blogs_container {
+  @include flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.blog {
+  max-width: 400px;
+  transition: all 0.3s;
+  margin-top: 3rem;
+  border-radius: 10px;
+  &:hover {
+    box-shadow: 5px 5px 20px 8px rgb(0, 0, 0, 0.2);
+  }
+}
+
+.blog_title {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+  padding: 0 10px;
+  text-transform: capitalize ;
+}

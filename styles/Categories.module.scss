@@ -1,0 +1,124 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories {
+  @include flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.container {
+  @include flex;
+  flex-direction: column;
+  width: min(90%, 80rem);
+}
+
+.categories_container {
+  @include flex;
+  flex-direction: column;
+  padding: 5rem 0;
+}
+
+.category_card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  position: relative;
+  flex-direction: column;
+  min-height: 400px;
+  width: 350px;
+  margin-top: 5rem;
+  border-radius: 20px;
+  box-shadow: 3px 3px 30px 10px rgb(0,0,0,0.2);
+  transition: all 0.3s;
+  overflow: hidden;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.5);
+  }
+}
+
+.category_img {
+  object-fit: cover;
+  min-height: 200px;
+  max-width: 100%;
+  &:nth-child(1) {
+    min-height: 400px;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+  }
+}
+
+.category_details {
+  margin-top: 2rem;
+}
+
+.category_title {
+  color: white;
+}
+
+.category_subtitle {
+  color: goldenrod
+}
+
+.features_container {
+  @include flex;
+  flex-direction: column;
+}
+
+.features_card {
+  background-image: linear-gradient(150deg, #191967 45%, rgb(0,0,47)) ;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.2);
+  transition: all 0.3s;
+  margin-top: 3rem;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.5);
+  }
+  &:nth-child(2) {
+    background-image: linear-gradient(150deg, #913a00 , #2f1500) ;
+  }
+  &:nth-child(3) {
+    background-image: linear-gradient(150deg, #008191, #002e2f) ;
+  }
+  &:nth-child(4) {
+    background-image: linear-gradient(150deg, #918100, #2f2700) ;
+  }
+}
+
+.icon,
+.icon1,
+.icon2,
+.icon3 {
+  height: 70px;
+  width: 70px;
+  border-radius: 20px;
+  background: #1313ff;
+  padding: 15px;
+  color: white;
+  box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.2);
+}
+
+.icon1 {
+  background:#f16000;
+}
+.icon2 {
+  background:#00ecf1;
+}
+.icon3 {
+  background:#f1b600;
+}
+
+.feature_title {
+  color: white;
+  text-transform: capitalize;
+}
+
+.feature_subtitle {
+  color: #cfcfcf;
+}

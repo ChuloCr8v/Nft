@@ -4,6 +4,9 @@ import styles from '../styles/Home.module.css'
 import Hero from '../components/Hero'
 import TrendingCreators from '../components/TrendingCreators'
 import TrendingNfts from '../components/TrendingNfts'
+import Categories from '../components/Categories'
+import Cta from '../components/Cta'
+import Blogs from '../components/Blog'
 
 export default function Home() {
   return (
@@ -16,6 +19,9 @@ export default function Home() {
       <Hero />
       <TrendingNfts />
       <TrendingCreators />
+      <Categories />
+      <Cta />
+      <Blogs />
     </div>
   ) 
 }

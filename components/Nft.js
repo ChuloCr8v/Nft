@@ -78,6 +78,7 @@ const Nft = [
     availability: '10 in stock',
     time: "341d : 3hr : 25m : 55s", 
     likes: "7.5k", 
+    category: "cat",
   }, 
   {
     image: "/images/nft09.png", 
@@ -88,6 +89,7 @@ const Nft = [
     availability: '5 in stock',
     time: "341d : 3hr : 25m : 55s", 
     likes: "10k", 
+    category: "cat",
   }, 
   {
     image: "/images/nft10.png", 
@@ -98,6 +100,7 @@ const Nft = [
     availability: '2 in stock',
     time: "341d : 3hr : 25m : 55s", 
     likes: "2.2k", 
+    category: "cat",
   }, 
   {
     image: "/images/nft11.png", 
@@ -108,6 +111,7 @@ const Nft = [
     availability: '7 in stock',
     time: "341d : 3hr : 25m : 55s", 
     likes: "3.5k", 
+    category: "monkey",
   }, 
   {
     image: "/images/nft12.png", 
@@ -138,6 +142,7 @@ const Nft = [
     availability: '9 in stock',
     time: "341d : 3hr : 25m : 55s", 
     likes: "9.3k", 
+    category: "monkey",
   }, 
   {
     image: "/images/nft15.png", 
@@ -148,6 +153,40 @@ const Nft = [
     availability: '2 in stock',
     time: "341d : 3hr : 25m : 55s", 
     likes: "5k", 
+    category: "monkey",
+  }, 
+  {
+    image: "/images/nft16.jpg", 
+    name: "Serenity", 
+    price: "0.065 Eth", 
+    creator_name: "Mark Demi", 
+    creator_image: "/images/creator09.jpg", 
+    availability: '2 in stock',
+    time: "341d : 3hr : 25m : 55s", 
+    likes: "5k", 
+    category: "abstract",
+  }, 
+  {
+    image: "/images/nft17.png", 
+    name: "Digitalia",
+    price: "0.052 Eth", 
+    creator_name: "Sussan Block", 
+    creator_image: "/images/creator02.jpg", 
+    availability: '2 in stock',
+    time: "341d : 3hr : 25m : 55s", 
+    likes: "3k", 
+    category: "abstract",
+  }, 
+  {
+    image: "/images/nft18.jpg", 
+    name: "Keeping balance", 
+    price: "0.089 Eth", 
+    creator_name: "Lucy Carr", 
+    creator_image: "/images/creator05.jpg", 
+    availability: '2 in stock',
+    time: "341d : 3hr : 25m : 55s", 
+    likes: "2.8k", 
+    category: "abstract",
   }, 
 ]
 

@@ -1,10 +1,12 @@
-import Header from './Header.jsx'
+import Header from './Header'
+import Footer from './Footer'
 
 const Layout = ({children}) => { 
   return ( 
       <section >
         <Header />
         {children} 
+        <Footer/>
       </section>
     ); 
   }; 
