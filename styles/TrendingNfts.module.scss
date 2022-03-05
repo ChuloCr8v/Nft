@@ -29,7 +29,7 @@
   position: relative;
   flex-direction: column;
   min-height: 400px;
-  width: 350px;
+  max-width: 350px;
   padding: 10px;
   margin-top: 3.5rem;
   border-radius: 20px;
@@ -136,23 +136,22 @@
   color: teal;
 }
 
+@media (max-width: 400px) {
+  .nft_card {
+    max-width: 250px;
+  }
+}
+
 @media (min-width: 688px) {
   .nft_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .nft_card {
-    margin: 1rem;
+    gap: 1rem;
   }
 }
-@media (min-width: 1200px) {
-  .nft_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
 
-  .nft_card {
-    margin: 1rem;
+@media (min-width: 1024px) {
+  .nft_container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -56,3 +56,10 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .blogs_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

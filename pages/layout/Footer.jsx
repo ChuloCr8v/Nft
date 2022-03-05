@@ -47,7 +47,7 @@ const Footer = () => {
               Music
             </a>
           </div>
-          <div className={styles.footer_section}>
+          <div className={styles.footer_section} id={styles.newsletter}>
             <h3 className={styles.section_title}>Newsletter </h3>
             <form action="/" method="POST" className={styles.form}>
               <input type="email" required placeholder="Your Email Address" />

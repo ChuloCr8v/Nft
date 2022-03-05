@@ -61,7 +61,7 @@
     padding: 15px;
     &:hover {
       border: #1f44e6;
-      outlook: none;
+      outline: none;
     }
   }
   input[type="submit"] {
@@ -69,6 +69,7 @@
     background: #1f44e6;
     color: white;
     margin-left: -30px;
+    cursor: pointer;
     &:hover,
     &:focus {
       outline: none;
@@ -90,5 +91,25 @@
   box-shadow: 3px 5px 10px 2px rgba(0, 0, 0, 0.2);
   span {
     color: goldenrod;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer_content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+  }
+
+  .footer_section {
+    margin-top: 0;
+  }
+
+  .logo_container {
+    grid-column: 1 / span 2;
+  }
+
+  #newsletter {
+    grid-column: 5 / span 2;
   }
 }

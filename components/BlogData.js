@@ -4,7 +4,7 @@ const BlogData = [
     title: "All you need to know about Non-Fungible Tokens (NFTs)",
   },
   {
-    img: "/images/nft17.png",
+    img: "/images/nft10.png",
     title: "What are NFTs and should you invest in them?",
   },
   {
