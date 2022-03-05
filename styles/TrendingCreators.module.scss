@@ -83,9 +83,12 @@
   .creators_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center ;
-    gap: 0;
+    justify-items: center;
   }
 
-  .creator_card {}
+  .creator_card {
+    margin: 1rem;
+    width: 400px;
+    justify-content: space-around;
+  }
 }

@@ -12,7 +12,7 @@
 }
 
 .trending_nfts {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .container {
@@ -20,7 +20,7 @@
 }
 
 .nft_container {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 .nft_card {
@@ -140,6 +140,16 @@
   .nft_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nft_card {
+    margin: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .nft_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .nft_card {
