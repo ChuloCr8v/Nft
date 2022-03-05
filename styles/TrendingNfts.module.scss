@@ -24,7 +24,7 @@
 }
 
 .nft_card {
-  background: rgb(15,44,106, 0.3);
+  background: rgb(15, 44, 106, 0.3);
   backdrop-filter: blur(100px);
   position: relative;
   flex-direction: column;
@@ -33,11 +33,11 @@
   padding: 10px;
   margin-top: 3.5rem;
   border-radius: 20px;
-  box-shadow: 3px 3px 30px 10px rgb(0,0,0,0.2);
+  box-shadow: 3px 3px 30px 10px rgb(0, 0, 0, 0.2);
   transition: all 0.3s;
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.5);
+    box-shadow: 5px 10px 50px 10px rgb(0, 0, 0, 0.5);
   }
 }
 
@@ -58,7 +58,7 @@
   left: 20px;
   top: 20px;
   padding: 0 8px;
-  box-shadow: 3px 3px 8px 2px rgb(0,0,0,0.5);
+  box-shadow: 3px 3px 8px 2px rgb(0, 0, 0, 0.5);
   color: black;
 }
 
@@ -70,14 +70,14 @@
 
 .nft_img {
   max-width: 100%;
-  height: 400px;
+  height: 300px;
   object-fit: cover;
   border-radius: 15px;
 }
 
 .price_place_bid_container {
   @include flex;
-  Justify-content: space-between;
+  justify-content: space-between;
   padding: 0 1rem;
 }
 
@@ -93,7 +93,7 @@
 .price {
   font-size: 1.3em;
   font-weight: bold;
-  color: goldenrod
+  color: goldenrod;
 }
 
 .place_bid_btn {
@@ -102,9 +102,9 @@
   border-radius: 100px;
   padding: 10px 18px;
   border: none;
-  box-shadow: 3px 3px 10px 2px rgb(0,0,0,0.2);
+  box-shadow: 3px 3px 10px 2px rgb(0, 0, 0, 0.2);
   &:hover {
-    box-shadow: 5px 5px 15px 2px rgb(0,0,0,0.5);
+    box-shadow: 5px 5px 15px 2px rgb(0, 0, 0, 0.5);
   }
 }
 
@@ -134,4 +134,15 @@
 
 .availability {
   color: teal;
+}
+
+@media (min-width: 688px) {
+  .nft_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nft_card {
+    margin: 1rem;
+  }
 }

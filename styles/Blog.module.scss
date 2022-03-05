@@ -30,6 +30,9 @@
   &:hover {
     box-shadow: 5px 5px 20px 8px rgb(0, 0, 0, 0.2);
   }
+  img {
+    object-fit: cover;
+  }
 }
 
 .blog_title {
@@ -37,5 +40,19 @@
   color: white;
   margin-top: 1rem;
   padding: 0 10px;
-  text-transform: capitalize ;
+  text-transform: capitalize;
+}
+
+@media (min-width: 688px) {
+  .blogs_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .blog {
+    margin: 1rem;
+    img {
+      height: 200px;
+    }
+  }
 }

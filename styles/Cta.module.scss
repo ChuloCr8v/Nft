@@ -20,7 +20,7 @@
   width: min(90%, 80rem);
   padding: 3rem 2rem;
   border-radius: 20px;
-  box-shadow: 3px 3px 30px 10px rgb(0,0,0,0.2);
+  box-shadow: 3px 3px 30px 10px rgb(0, 0, 0, 0.2);
 }
 
 .cta_content_container {
@@ -35,15 +35,26 @@
 
 .browse_nft_btn {
   display: inline-block;
-  font-size: .8em;
+  font-size: 0.8em;
   background: #1f44e6;
   color: white;
   border-radius: 10px;
   padding: 10px 15px;
   margin-top: 1rem;
-  transition: all 0.3s ;
+  transition: all 0.3s;
   &:hover {
     background: white;
     color: black;
+  }
+}
+
+@media (min-width: 688px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .cta_content_container {
+    margin-bottom: 0;
   }
 }

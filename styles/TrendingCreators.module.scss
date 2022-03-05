@@ -11,13 +11,12 @@
 
 .container {
   @include flex;
-  background: rgba(255,255,255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(100px);
   flex-direction: column;
   width: min(90%, 80rem);
   border-radius: 15px;
-  padding: 2rem 0;
-
+  padding: 2rem;
 }
 
 .creators_container {
@@ -29,17 +28,17 @@
 
 .creator_card {
   @include flex;
-  background: rgb(12,1,50, 0.7);
+  background: rgb(12, 1, 50, 0.7);
   backdrop-filter: blur(50px);
   height: 150px;
   width: 300px;
   border-radius: 15px;
   color: white;
-  box-shadow: 5px 5px 15px 2px rgb(0,0,0,0.2);
+  box-shadow: 5px 5px 15px 2px rgb(0, 0, 0, 0.2);
   margin-top: 2rem;
   transition: all 0.3s;
   &:hover {
-    box-shadow: 5px 5px 15px 2px rgb(0,0,0,0.5);
+    box-shadow: 5px 5px 15px 2px rgb(0, 0, 0, 0.5);
   }
 }
 
@@ -76,5 +75,12 @@
 }
 
 .balance {
-  color: #31a0f2 ;
+  color: #31a0f2;
+}
+
+@media (min-width: 688px) {
+  .creators_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

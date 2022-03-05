@@ -32,12 +32,12 @@
   width: 350px;
   margin-top: 5rem;
   border-radius: 20px;
-  box-shadow: 3px 3px 30px 10px rgb(0,0,0,0.2);
+  box-shadow: 3px 3px 30px 10px rgb(0, 0, 0, 0.2);
   transition: all 0.3s;
   overflow: hidden;
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.5);
+    box-shadow: 5px 10px 50px 10px rgb(0, 0, 0, 0.5);
   }
 }
 
@@ -54,6 +54,7 @@
 
 .category_details {
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .category_title {
@@ -61,7 +62,7 @@
 }
 
 .category_subtitle {
-  color: goldenrod
+  color: goldenrod;
 }
 
 .features_container {
@@ -70,24 +71,24 @@
 }
 
 .features_card {
-  background-image: linear-gradient(150deg, #191967 45%, rgb(0,0,47)) ;
+  background-image: linear-gradient(150deg, #191967 45%, rgb(0, 0, 47));
   padding: 20px;
   border-radius: 20px;
-  box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.2);
+  box-shadow: 5px 10px 50px 10px rgb(0, 0, 0, 0.2);
   transition: all 0.3s;
   margin-top: 3rem;
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.5);
+    box-shadow: 5px 10px 50px 10px rgb(0, 0, 0, 0.5);
   }
   &:nth-child(2) {
-    background-image: linear-gradient(150deg, #913a00 , #2f1500) ;
+    background-image: linear-gradient(150deg, #913a00, #2f1500);
   }
   &:nth-child(3) {
-    background-image: linear-gradient(150deg, #008191, #002e2f) ;
+    background-image: linear-gradient(150deg, #008191, #002e2f);
   }
   &:nth-child(4) {
-    background-image: linear-gradient(150deg, #918100, #2f2700) ;
+    background-image: linear-gradient(150deg, #918100, #2f2700);
   }
 }
 
@@ -101,17 +102,17 @@
   background: #1313ff;
   padding: 15px;
   color: white;
-  box-shadow: 5px 10px 50px 10px rgb(0,0,0,0.2);
+  box-shadow: 5px 10px 50px 10px rgb(0, 0, 0, 0.2);
 }
 
 .icon1 {
-  background:#f16000;
+  background: #f16000;
 }
 .icon2 {
-  background:#00ecf1;
+  background: #00ecf1;
 }
 .icon3 {
-  background:#f1b600;
+  background: #f1b600;
 }
 
 .feature_title {
@@ -121,4 +122,24 @@
 
 .feature_subtitle {
   color: #cfcfcf;
+}
+
+@media (min-width: 688px) {
+  .categories_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category_card {
+    margin: 1rem;
+  }
+
+  .features_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features_card {
+    margin: 1rem;
+  }
 }
