@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
             <div className={styles.footer_section}>
               <h3 className={styles.section_title}>Newsletter </h3>
-              <form action="/" method="POST">
+              <form action="/" method="POST" className={styles.form}>
                 <input type="email" required placeholder="Your Email Address" />
                 <input type="submit" value="Subscribe" />
               </form>
@@ -45,6 +45,7 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.footer_credits}>
+            <p className={styles.credits}> UI/UX by <span>Qoreebullah </span> & Development by <span><a href="https://devc.tech" > Devc.tech</a></span></p>
           </div>
         </div>
       </footer>
