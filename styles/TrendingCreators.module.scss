@@ -32,7 +32,7 @@
   background: rgb(12, 1, 50, 0.7);
   backdrop-filter: blur(50px);
   height: 150px;
-  width: 300px;
+  min-width: 300px;
   border-radius: 15px;
   color: white;
   box-shadow: 5px 5px 15px 2px rgb(0, 0, 0, 0.2);
@@ -91,11 +91,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
+    padding: 0 2rem;
   }
 
   .creator_card {
     justify-content: space-around;
     margin: 1rem;
+    width: 350px;
   }
 }
 

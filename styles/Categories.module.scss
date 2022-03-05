@@ -145,7 +145,7 @@
   }
 
   .category_card {
-    max-width: 300px;
+    min-width: 300px;
   }
 
   .features_card {
@@ -158,6 +158,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .category_card {
+    justify-self: stretch;
+  }
   .features_container {
     margin-top: 3rem;
     display: grid;
