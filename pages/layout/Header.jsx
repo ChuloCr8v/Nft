@@ -6,8 +6,35 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
+ const [showHeader, setShowHeader] = useState(true); 
+ 
+ const [scroll, setScrollY] = useState('')
+ 
+ useEffect(() => { 
+   setScrollY(window.pageYOffset) 
+ }, []) 
+ 
+ let prevPos = scroll; 
+
+ const header = () => {
+   let currentPos = window.pageYOffset; 
+   if(currentPos > prevPos) { 
+     setShowHeader(true) 
+   } else { setShowHeader(false) 
+     } 
+   prevPos = currentPos 
+ } 
+ 
+ useEffect(() => { 
+   window.addEventListener('scroll', header); 
+   return () => { 
+     window.removeEventListener('scroll', header);
+   }; 
+ }, [])
+
+  
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id={showHeader && styles.hide_header} >
       <div className={styles.container}>
         <div className={styles.logo}  >Logo</div>
         <FontAwesomeIcon
