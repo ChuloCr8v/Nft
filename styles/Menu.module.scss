@@ -44,7 +44,8 @@
 
 @media (min-width: 688px) {
   .nav {
-    position: relative;
+    border: 2px gold solid;
+    position: absolute;
     right: 0;
     top: 0;
     height: 100%;
