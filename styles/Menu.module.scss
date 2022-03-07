@@ -41,3 +41,16 @@
     color: gold;
   }
 }
+
+@media (min-width: 688px) {
+  .nav {
+    position: relative;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    .menu {
+      width: auto;
+    }
+  }
+}

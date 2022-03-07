@@ -46,3 +46,10 @@
   color: red;
   transform: rotateY(40deg);
 }
+
+
+@media (min-width: 688px) {
+  .icon {
+    display: none;
+  }
+}

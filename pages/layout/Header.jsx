@@ -20,7 +20,8 @@ const Header = () => {
    let currentPos = window.pageYOffset; 
    if(currentPos > prevPos) { 
      setShowHeader(true) 
-   } else { setShowHeader(false) 
+   } else { 
+     setShowHeader(false) 
      } 
    prevPos = currentPos 
  } 
