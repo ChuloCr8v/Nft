@@ -44,14 +44,15 @@
 
 @media (min-width: 688px) {
   .nav {
-    border: 2px gold solid;
     position: absolute;
     right: 0;
     top: 0;
     height: 100%;
     width: 100%;
     .menu {
-      width: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
   }
 }
