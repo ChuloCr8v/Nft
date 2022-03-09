@@ -8,9 +8,11 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.footer_content}>
           <div className={styles.logo_container}>
-            <h1> Logo </h1>
+           <div className={styles.logo}>
+             <h1 className={styles.logo}> Magnificent </h1>
+           </div>
             <p className={styles.description}>
-              Nft Diary is the place to get your hands on some of the most
+              Magnificent is the place to get your hands on some of the most
               creative Nft arts.{" "}
             </p>
           </div>

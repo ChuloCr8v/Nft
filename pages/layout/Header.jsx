@@ -37,7 +37,9 @@ const Header = () => {
   return (
     <header className={styles.header} id={hideHeader && styles.hide_header}>
       <div className={styles.container}>
-        <div className={styles.logo}>Logo</div>
+        <div className={styles.logo}>
+          <h1 className={styles.logo}> Magnificent </h1>
+        </div>
         <FontAwesomeIcon
           icon={faBars}
           className={styles.icon}

@@ -6,13 +6,17 @@
 
 .menu {
   @include flex;
+  // align-items: flex-start;
   flex-direction: column;
+  margin-top: 5vh;
+  height: 100%;
+  top: 1vh;
   transition: all 0.3s;
-  padding: 20px;
-  margin-top: 100px;
+  padding: 0 1rem;
 }
 
 .menu_item {
+  background: rgba(255,255,255,0.07);
   width: 100%;
   font-size: large;
   color: white;
@@ -20,21 +24,17 @@
   padding: 0.6rem;
   padding-left: 1rem;
   transition: all 0.3s;
-  background: rgba(128, 128, 128, 0.248);
-  border-bottom: 1px solid gray;
+  border-bottom: 2px gray solid;
   &:hover {
+    margin-left: 20px;
     background: rgba(0, 0, 0, 0.22);
     color: gold;
     box-shadow: 3px 1px 30px 1px rgba(67, 2, 220, 0.5);
-    margin-left: 20px;
   }
 }
 
 #contact {
   margin-top: 3rem;
-  position: absolute;
-  bottom: 5rem;
-  left: 1rem;
   background-color: aqua;
   padding: 10px 20px;
   border-radius: 20px;
@@ -43,5 +43,41 @@
   font-weight: bolder;
   &:hover {
     box-shadow: 3px 10px 50px 1px rgba(67, 2, 220);
+
+  }
+}
+
+@media (min-width: 700px) {
+  .menu {
+    flex-direction: row;
+    margin-top: 0;
+    height: auto;
+    transition: all 0.3s;
+    // padding: 0 1rem;
+    * + * {
+      margin-left: 10px;
+    }
+  }
+
+  .menu_item {
+    background: transparent;
+    width: auto;
+    color: white;
+    padding: 0;
+    padding-left: 0;
+    transition: all 0.3s;
+    border-bottom: 0;
+    &:hover {
+      margin-left: 20px;
+      background: transparent;
+      color: gold;
+      box-shadow: 3px 1px 30px 1px rgba(67, 2, 220, 0.5);
+    }
+  }
+
+  #contact {
+    margin-top: 0;
+    padding: 3px 10px;
+    margin-left: 5rem;
   }
 }

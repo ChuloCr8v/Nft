@@ -29,10 +29,16 @@
 .container {
   @include flex;
   justify-content: space-between;
-  padding: 1rem 0;
+  padding: 0.3rem 0;
   z-index: 100;
   width: min(90%, 80rem);
   position: relative;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
 }
 
 .icon {

@@ -21,6 +21,12 @@
   width: min(90%, 80rem);
 }
 
+.logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
 .footer_section {
   width: 100%;
   @include flex;
