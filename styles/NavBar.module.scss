@@ -1,0 +1,33 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_bar {
+  @include flex;
+  //  justify-content: space-between;
+  z-index: 20;
+}
+
+.menu_container {
+  left: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(40px);
+  top: 3.7rem;
+  position: fixed;
+  height: auto;
+  width: 100%;
+  transform: translateX(-100vw);
+  transition: all 0.3s;
+  padding-bottom: 3rem;
+  z-index: 0;
+}
+
+#show_menu {
+  transform: translateX(0);
+}
+
+#hide_menu {
+  transform: translateY(-300px);
+}

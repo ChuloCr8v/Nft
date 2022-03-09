@@ -4,55 +4,40 @@
   align-items: center;
 }
 
-.nav,
-.show_menu {
+.menu {
   @include flex;
-  background: rgba(0,0,0,0.2);
-  backdrop-filter: blur(50px);
-  height: 0;
-  width: 100vw;
-  position: fixed;
-  bottom: -6rem;
-  left: 0;
-  z-index: 20;
-  transition: all 0.4s;
-  .menu {
-    width: 100%;
-    @include flex;
-    * + * {
-      margin-left: .8rem;
-    }
-  }
-}
-
-.show_menu {
-  bottom: 0;
-  height: 5rem;
+  // align-items: flex-start;
+  flex-direction: column;
+  margin-top: 5vh;
+  height: 100%;
+  top: 1vh;
+  transition: all 0.3s;
 }
 
 .menu_item {
-  list-style: none;
-  font-size: 1.2rem;
+  width: 100%;
+  font-size: large;
   color: white;
   text-align: center;
+  padding: 0.6rem;
+  padding-left: 1rem;
   transition: all 0.3s;
-  cursor: pointer;
   &:hover {
+    background: rgba(0, 0, 0, 0.22);
     color: gold;
+    box-shadow: 3px 1px 30px 1px rgba(67, 2, 220, 0.5);
   }
 }
 
-@media (min-width: 688px) {
-  .nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    .menu {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
+#contact {
+  margin-top: 3rem;
+  background-color: aqua;
+  padding: 10px 20px;
+  border-radius: 20px;
+  width: auto;
+  color: black;
+  font-weight: bolder;
+  &:hover {
+    box-shadow: 3px 10px 50px 1px rgba(67, 2, 220);
   }
 }
