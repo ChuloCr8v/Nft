@@ -11,14 +11,15 @@
 }
 
 .menu_container {
+  margin-top: 50px;
   left: 0;
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(40px);
   top: 0;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  transform: translateX(-100vw);
+  transform: translateX(-200vw);
   transition: all 0.3s;
   padding-bottom: 10rem;
   z-index: 0;

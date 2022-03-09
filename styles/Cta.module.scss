@@ -52,6 +52,9 @@
   .container {
     flex-direction: row;
     align-items: center;
+    * {
+      flex-basis: 100%;
+    }
   }
 
   .cta_content_container {

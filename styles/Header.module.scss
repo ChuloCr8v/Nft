@@ -9,7 +9,7 @@
   @include flex;
   flex-direction: column;
   position: fixed;
-  background: rgba(255, 255, 255, 0.31);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 200;
   transition: all 0.3s;
   &::after {
@@ -45,7 +45,7 @@
 }
 
 #rotate {
-  color: red;
+  color: gold;
   transform: rotateY(40deg);
 }
 

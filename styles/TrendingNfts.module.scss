@@ -136,22 +136,26 @@
   color: teal;
 }
 
-@media (max-width: 400px) {
-  .nft_card {
-    max-width: 250px;
-  }
-}
-
-@media (min-width: 688px) {
+@media (min-width: 700px) {
   .nft_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 20px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   .nft_container {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 2000px) {
+  .nft_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
   }
 }
