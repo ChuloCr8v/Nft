@@ -7,7 +7,7 @@ import NavBar from "../../components/NavBar";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [showHeader, setShowHeader] = useState(true);
+  const [hideHeader, sethideHeader] = useState(false);
 
   const [scroll, setScrollY] = useState("");
 
@@ -20,9 +20,9 @@ const Header = () => {
   const header = () => {
     let currentPos = window.pageYOffset;
     if (currentPos > prevPos) {
-      setShowHeader(true);
+      sethideHeader(true);
     } else {
-      setShowHeader(false);
+      sethideHeader(false);
     }
     prevPos = currentPos;
   };
@@ -35,7 +35,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={styles.header} id={showHeader && styles.hide_header}>
+    <header className={styles.header} id={hideHeader && styles.hide_header}>
       <div className={styles.container}>
         <div className={styles.logo}>Logo</div>
         <FontAwesomeIcon
@@ -46,7 +46,7 @@ const Header = () => {
             setShowMenu(!showMenu);
           }}
         />
-        <NavBar showMenu={showMenu} showHeader={showHeader} />
+        <NavBar showMenu={showMenu} hideHeader={hideHeader} />
       </div>
     </header>
   );
