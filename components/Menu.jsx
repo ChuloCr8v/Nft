@@ -21,7 +21,7 @@ const Menu = ({ setShowMenu}) => {
         </a>
       </Link>
       <Link href="/blog" className={styles.menu_item}>
-        <a className={styles.menu_item} onClick>
+        <a className={styles.menu_item}  onClick={() => setShowMenu(false)}>
           Blog
         </a>
       </Link>

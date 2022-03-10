@@ -17,7 +17,6 @@ const Header = () => {
   }, []);
 
   let prevPos = scroll;
-
   const header = () => {
     let currentPos = window.pageYOffset;
     if (currentPos > prevPos) {
@@ -27,14 +26,20 @@ const Header = () => {
     }
     prevPos = currentPos;
   };
+  
 
   useEffect(() => {
     window.addEventListener("scroll", header);
     return () => {
       window.removeEventListener("scroll", header);
     };
-  }, [header]);
+  }, []);
 
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      setShowMenu(false) }) 
+  },[]) 
+  
   return (
     <header className={styles.header} id={hideHeader && styles.hide_header}>
       <div className={styles.container}>
