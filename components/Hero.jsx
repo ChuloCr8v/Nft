@@ -4,6 +4,7 @@ import {useState, useEffect} from 'react'
 import Nft from './Nft'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import Link from 'next/link'
 
 const Hero = () => { 
   return ( 
@@ -13,11 +14,15 @@ const Hero = () => {
             <small className={styles.small}>Collectibles Nfts </small>
             <h1 className={styles.hero_heading}>Find Trending NFTs Auctions and buy timeless artworks</h1>
             <p className={styles.hero_subheading} > A much simpler Nft market that offers extraordinary original artwork by artists and an ideal place for collectors </p>
-            <a href="/" className={styles.browse_nft_btn}>Browse NFTs </a>
+             <Link href="/nfts">
+              <a className={styles.browse_nft_btn}>
+                Browse NFTs
+              </a>
+            </Link>
           </div>
           <div className={styles.nft_container}>
             {Nft.map((token) => (
-            <div className={styles.nft_card}>
+            <div key={token.name} className={styles.nft_card}>
               <div className={styles.nft_img_container}>
                 <img src={token.image} alt="nft image" className={styles.nft_img}/>
                 <div className={styles.likes_container} >

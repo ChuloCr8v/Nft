@@ -1,22 +1,33 @@
 import styles from "../styles/Menu.module.scss";
-const Menu = (/*{ showMenu }*/) => {
+import Link from 'next/link'
+
+
+const Menu = ({ setShowMenu}) => {
   return (
     <div className={styles.menu}>
-      <a href="/" className={styles.menu_item}>
-        Home
-      </a>
-      <a href="/" className={styles.menu_item}>
-        Creators
-      </a>
-      <a href="/" className={styles.menu_item}>
-        Trending NFTs
-      </a>
-      <a href="/" className={styles.menu_item}>
-        Blog
-      </a>
-      <a href="/" className={styles.menu_item} id={styles.contact}>
+      <Link href="/" className={styles.menu_item}>
+        <a className={styles.menu_item} onClick={() => setShowMenu(false)}>
+          Home
+        </a>
+      </Link>
+      <Link href="/creators" className={styles.menu_item}>
+        <a className={styles.menu_item} onClick={() => setShowMenu(false)}>
+          Creators
+        </a>
+      </Link>
+      <Link href="/nfts">
+        <a className={styles.menu_item} onClick={() => setShowMenu(false)} >
+          Trending NFTs
+        </a>
+      </Link>
+      <Link href="/blog" className={styles.menu_item}>
+        <a className={styles.menu_item} onClick>
+          Blog
+        </a>
+      </Link>
+      <button className={styles.menu_item} id={styles.contact}>
         Contact
-      </a>
+      </button>
     </div>
   );
 };

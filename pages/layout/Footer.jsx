@@ -1,6 +1,6 @@
 import styles from "../../styles/Footer.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitter, faFacebook } from "@fortawesome/free-solid-svg-icons";
+//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { FaTwitter, FaFacebook } from "react-icons";
 
 const Footer = () => {
   return (
@@ -55,10 +55,10 @@ const Footer = () => {
               <input type="email" required placeholder="Your Email Address" />
               <input type="submit" value="Subscribe" />
             </form>
-            <div className={styles.socials}>
-              <FontAwesomeIcon icon={faTwitter} className={styles.icon} />
-              <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
-            </div>
+         {/*   <div className={styles.socials}>
+              <FaTwitter className={styles.icon} />
+              <FaFacebook className={styles.icon} />
+            </div> */}
           </div>
         </div>
         <div className={styles.footer_credits}>

@@ -29,14 +29,14 @@
 .container {
   @include flex;
   justify-content: space-between;
-  padding: 0.3rem 0;
   z-index: 100;
   width: min(90%, 80rem);
   position: relative;
+  padding: 1rem 0;
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   font-weight: bold;
 }

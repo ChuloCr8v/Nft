@@ -8,7 +8,7 @@ const TrendingCreators = () => {
           <Heading title={'Trending Creators'} subtitle={"Check out today's top creators"} />
           <div className={styles.creators_container}>
               {trendingCreators.map((creator) => (
-                <div className={styles.creator_card}>
+                <div key={creator.name} className={styles.creator_card}>
                    <div className={styles.creator_image_container}>
                      <img src={creator.image} className={styles.creator_image} />
                      <p className={styles.level}>{creator.level} </p>

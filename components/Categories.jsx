@@ -15,6 +15,7 @@
    const monkeyCategory = categories.filter((category) => {
      return category.category === "monkey"
    })
+   
    return (
      <section className={styles.categories}>
       <div className={styles.container}>
@@ -24,7 +25,7 @@
             <div className={styles.category_card_container}>
               <div className={styles.category_card}>
                 {catCategory.map((category) => (
-                  <img src={category.image} className={styles.category_img} />
+                  <img src={category.image} className={styles.category_img}  key={category.name}/>
                 ))}
               </div>
               <div className={styles.category_details}>
@@ -35,7 +36,7 @@
             <div className={styles.category_card_container}>
               <div className={styles.category_card}>
                 {abstractCategory.map((category) => (
-                  <img src={category.image} className={styles.category_img} />
+                  <img src={category.image} className={styles.category_img} key={category.name}/>
                 ))}
               </div>
               <div className={styles.category_details}>
@@ -46,7 +47,7 @@
             <div className={styles.category_card_container}>
               <div className={styles.category_card}>
                 {monkeyCategory.map((category) => (
-                  <img src={category.image} className={styles.category_img} />
+                  <img src={category.image} key={category.name} className={styles.category_img} />
                 ))}
               </div>
               <div className={styles.category_details}>

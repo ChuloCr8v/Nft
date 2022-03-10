@@ -3,10 +3,11 @@ import trendingNfts from "./Nft";
 import Heading from "./Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image'
 
 const TrendingNfts = () => {
   return (
-    <section className={styles.trending_nfts}>
+    <section className={styles.trending_nfts} style={{paddingTop: '7rem'}}>
       <div className={styles.container}>
         <Heading
           title={"Trending Nfts"}
@@ -15,9 +16,9 @@ const TrendingNfts = () => {
         <div className={styles.nft_container}>
           {trendingNfts
             .map((nft) => (
-              <div className={styles.nft_card}>
+              <div key={nft.name} className={styles.nft_card}>
                 <div className={styles.nft_img_container}>
-                  <img
+                  <img 
                     src={nft.image}
                     alt="nft image"
                     className={styles.nft_img}

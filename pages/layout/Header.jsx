@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../../components/NavBar";
+import Link from 'next/link'
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -32,13 +33,17 @@ const Header = () => {
     return () => {
       window.removeEventListener("scroll", header);
     };
-  }, []);
+  }, [header]);
 
   return (
     <header className={styles.header} id={hideHeader && styles.hide_header}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <h1 className={styles.logo}> Magnificent </h1>
+          <Link href='/' className={styles.logo}>
+            <a>
+              Magnificent
+            </a>
+          </Link>
         </div>
         <FontAwesomeIcon
           icon={faBars}
@@ -48,7 +53,7 @@ const Header = () => {
             setShowMenu(!showMenu);
           }}
         />
-        <NavBar showMenu={showMenu} hideHeader={hideHeader} />
+        <NavBar showMenu={showMenu} setShowMenu = {setShowMenu} hideHeader={hideHeader} />
       </div>
     </header>
   );
