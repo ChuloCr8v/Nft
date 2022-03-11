@@ -17,7 +17,7 @@ const Menu = ({ setShowMenu}) => {
       </Link>
       <Link href="/nfts">
         <a className={styles.menu_item} onClick={() => setShowMenu(false)} >
-          Trending NFTs
+          NFTs
         </a>
       </Link>
       <Link href="/blog" className={styles.menu_item}>

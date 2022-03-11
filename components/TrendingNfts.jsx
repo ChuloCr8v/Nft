@@ -4,8 +4,16 @@ import Heading from "./Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image'
+import {useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const TrendingNfts = () => {
+  
+  useEffect(() => {
+    Aos.init({duration: 500});
+  })
+  
   return (
     <section className={styles.trending_nfts} style={{paddingTop: '7rem'}}>
       <div className={styles.container}>
@@ -16,7 +24,7 @@ const TrendingNfts = () => {
         <div className={styles.nft_container}>
           {trendingNfts
             .map((nft) => (
-              <div key={nft.name} className={styles.nft_card}>
+              <div key={nft.name} data-aos="fade-up" className={styles.nft_card}>
                 <div className={styles.nft_img_container}>
                   <img 
                     src={nft.image}

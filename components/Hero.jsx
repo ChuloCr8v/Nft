@@ -5,24 +5,32 @@ import Nft from './Nft'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' 
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 const Hero = () => { 
+  
+  useEffect(() => {
+    Aos.init({duration: 500});
+  })
+  
+  
   return ( 
       <section className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.hero_content_container}>
-            <small className={styles.small}>Collectibles Nfts </small>
-            <h1 className={styles.hero_heading}>Find Trending NFTs Auctions and buy timeless artworks</h1>
-            <p className={styles.hero_subheading} > A much simpler Nft market that offers extraordinary original artwork by artists and an ideal place for collectors </p>
+            <small data-aos="fade-up" data-aos-delay="100" className={styles.small}>Collectibles Nfts </small>
+            <h1  data-aos="fade-up" data-aos-delay="200" className={styles.hero_heading}>Find Trending NFTs Auctions and buy timeless artworks</h1>
+            <p data-aos="fade-up" data-aos-delay="500"   className={styles.hero_subheading} > A much simpler Nft market that offerinal artwork by artists and an ideal place for collectors </p>
              <Link href="/nfts">
-              <a className={styles.browse_nft_btn}>
+              <a  data-aos="fade-up" data-aos-delay="700" className={styles.browse_nft_btn}>
                 Browse NFTs
               </a>
             </Link>
           </div>
           <div className={styles.nft_container}>
             {Nft.map((token) => (
-            <div key={token.name} className={styles.nft_card}>
+            <div key={token.name}   data-aos="fade-up" className={styles.nft_card}>
               <div className={styles.nft_img_container}>
                 <img src={token.image} alt="nft image" className={styles.nft_img}/>
                 <div className={styles.likes_container} >
