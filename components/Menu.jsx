@@ -25,9 +25,9 @@ const Menu = ({ setShowMenu}) => {
           Blog
         </a>
       </Link>
-      <button className={styles.menu_item} id={styles.contact}>
+      <a href="mailto:Chulocr8v@gmail.com" className={styles.menu_item} id={styles.contact}>
         Contact
-      </button>
+      </a>
     </div>
   );
 };

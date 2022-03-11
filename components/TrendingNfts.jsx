@@ -7,6 +7,8 @@ import Image from 'next/image'
 import {useEffect} from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Link from 'next/link'
+
 
 const TrendingNfts = () => {
   
@@ -54,7 +56,14 @@ const TrendingNfts = () => {
                 </div>
               </div>
             ))
-            .slice(0, 8)}
+            .slice(0, 4)}
+        </div>
+        <div className={styles.show_more_container}>
+          <Link href="/nfts">
+            <a className={styles.btn}>
+              Show more
+            </a>
+          </Link>
         </div>
       </div>
     </section>

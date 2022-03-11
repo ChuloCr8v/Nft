@@ -4,6 +4,7 @@ import Heading from './Heading'
 import {useEffect} from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Link from 'next/link'
 
 const TrendingCreators = () => { 
   
@@ -27,8 +28,15 @@ const TrendingCreators = () => {
                     <p className={styles.balance}>{creator.balance}</p>
                   </div>
                 </div>
-              ))}
+              )).slice(0, 4)}
           </div>
+        <div className={styles.show_more_container}>
+          <Link href="/creators">
+            <a className={styles.btn}>
+              Show more
+            </a>
+          </Link>
+        </div>
         </div>
       </section>
     ); 

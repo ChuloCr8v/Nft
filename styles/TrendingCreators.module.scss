@@ -80,6 +80,27 @@
   color: #31a0f2;
 }
 
+
+.show_more_container {
+  width: 100%;
+  @include flex;
+  justify-content: flex-end;
+  padding: 2rem 0;
+}
+
+.btn {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: goldenrod;
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(20px);
+  }
+}
+
+
 @media (min-width: 400px) {
   .creator_card {
     min-width: 350px;
