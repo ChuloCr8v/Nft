@@ -29,6 +29,7 @@
 
 .creator_card {
   @include flex;
+  justify-content: space-around ;
   background: rgb(12, 1, 50, 0.7);
   backdrop-filter: blur(50px);
   height: 150px;
@@ -37,7 +38,7 @@
   color: white;
   box-shadow: 5px 5px 15px 2px rgb(0, 0, 0, 0.2);
   margin-top: 2rem;
-  padding: 0 1rem;
+  padding: 0 .3rem;
   transition: all 0.3s;
   &:hover {
     box-shadow: 5px 5px 15px 2px rgb(0, 0, 0, 0.5);
@@ -65,10 +66,6 @@
   top: -6px;
   right: -2px;
   border-radius: 100%;
-}
-
-.creator_details {
-  margin-left: 3rem;
 }
 
 .name {
